@@ -350,6 +350,8 @@ var trialInstructions = {
 };
 timeline.push(trialInstructions);
 
+//Although trials are labeled McGurk and Incongruent, each trial contains both McGurk and incongruent stimuli randomly interleaved throughout//
+        
     var mcGurktrial = {
         timeline: [
         {type: 'video-button-response',
@@ -371,7 +373,7 @@ timeline.push(trialInstructions);
         choices: jsPsych.timelineVariable('syllables'),
         data: jsPsych.timelineVariable('syllables'),
         trial_ends_after_video: true,
-        prompt: "<p>Which visual syllable did you perceive?</p>"
+        prompt: "<p>Which auditory syllable did you perceive?</p>"
         },
     { type: 'html-slider-response',
                     stimulus: '<p>How confident are you in your answer?</p>',
@@ -390,7 +392,7 @@ timeline.push(trialInstructions);
         choices: jsPsych.timelineVariable('syllables'),
         data: jsPsych.timelineVariable('syllables'),
         trial_ends_after_video: true,
-        prompt: "<p>Which auditory syllable did you perceive?</p>"
+        prompt: "<p>Which visual syllable did you perceive?</p>"
         },
     { type: 'html-slider-response',
                     stimulus: '<p>How confident are you in your answer?</p>',
@@ -448,7 +450,7 @@ timeline.push(mcGurkEnd);
         choices: jsPsych.timelineVariable('syllables'),
         data: jsPsych.timelineVariable('syllables'),
         trial_ends_after_video: true,
-        prompt: "<p>Which visual syllable did you perceive?</p>"
+        prompt: "<p>Which auditory syllable did you perceive?</p>"
         },
     { type: 'html-slider-response',
                     stimulus: '<p>How confident are you in your answer?</p>',
@@ -467,7 +469,7 @@ timeline.push(mcGurkEnd);
         choices: jsPsych.timelineVariable('syllables'),
         data: jsPsych.timelineVariable('syllables'),
         trial_ends_after_video: true,
-        prompt: "<p>Which auditory syllable did you perceive?</p>"
+        prompt: "<p>Which visual syllable did you perceive?</p>"
         },
     { type: 'html-slider-response',
                     stimulus: '<p>How confident are you in your answer?</p>',
